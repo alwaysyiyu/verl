@@ -144,7 +144,7 @@ class TrainingWorker(Worker, DistProfilerExtension):
         """
         self.engine.initialize()
 
-    def _postprocess_output(self, output, *, global_token_num, delta_time, forward_only, images_sqenlens):
+    def _postprocess_output(self, output, *, global_token_num, delta_time, forward_only, images_seqlens):
         """
 
         Args:
